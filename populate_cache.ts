@@ -1,17 +1,15 @@
 import https from 'https';
 import fetch from 'node-fetch';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-restricted-syntax */
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports -- this is a tools script so we want to import zod directly
-import { z } from '../../ts/util/zod';
-import { ServiceNodesResponseSchema } from '../../ts/session/apis/seed_node_api/types';
+import { z } from 'zod';
 
-import { promises as fs } from 'fs';
-import path from 'path';
-
-const CACHE_FILE = path.join('volatile_assets', 'service-nodes-cache.json');
+const CACHE_FILE = path.join('./', 'service-nodes-cache.json');
 const MIN_NODE_COUNT = 20;
 const SEED_URLS = [
   'https://seed1.getsession.org/json_rpc',
@@ -22,6 +20,27 @@ const REQUEST_TIMEOUT_MS = 30000;
 
 const agent = new https.Agent({
   rejectUnauthorized: false,
+});
+
+const ServiceNodeFromSeedSchema = z.object({
+  public_ip: z.string(),
+  storage_port: z.number(),
+  pubkey_ed25519: z.string(),
+  pubkey_x25519: z.string(),
+  requested_unlock_height: z.number(),
+});
+
+const ServiceNodesFromSeedSchema = z
+  .array(ServiceNodeFromSeedSchema)
+  .transform(nodes => nodes.filter(node => node.public_ip && node.public_ip !== '0.0.0.0'));
+
+const ServiceNodesWithHeightSchema = z.object({
+  service_node_states: ServiceNodesFromSeedSchema,
+  height: z.number(),
+});
+
+const ServiceNodesResponseSchema = z.object({
+  result: ServiceNodesWithHeightSchema,
 });
 
 async function fetchServiceNodes() {
