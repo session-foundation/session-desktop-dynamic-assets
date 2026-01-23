@@ -6837,7 +6837,7 @@
       "storage_port": 22108,
       "pubkey_ed25519": "081c6d44c7a10ff80b86037d6de0adbb5ca911cb8db93831a0dd484d1f387572",
       "pubkey_x25519": "04385e377449f5ccd9f2acaa542024fb5dd5bc474524f96065bcf775381f8650",
-      "requested_unlock_height": 0
+      "requested_unlock_height": 2040558
     },
     {
       "public_ip": "185.45.114.9",
@@ -10578,5 +10578,5 @@
       "requested_unlock_height": 0
     }
   ],
-  "height": 2029361
+  "height": 2029933
 }
