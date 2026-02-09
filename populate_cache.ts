@@ -111,6 +111,9 @@ async function main() {
     console.log('Fetching fresh service node data...');
     const parsed = await fetchServiceNodes();
 
+    // Sort nodes by pubkey_ed25519 so the diff is minimal between updates
+    parsed.service_node_states.sort((a, b) => a.pubkey_ed25519.localeCompare(b.pubkey_ed25519));
+
     // remove the file so we are sure the date of creation will be correct (needed for session-desktop to know how old the snode pool is)
     await fs.rm(CACHE_FILE, { force: true });
     // Save to cache
