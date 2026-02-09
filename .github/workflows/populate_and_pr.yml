@@ -1,51 +1,52 @@
 name: Update snode cache
 
 on:
-    workflow_dispatch: # Manual trigger
-    schedule:
-        - cron: "35 11 * * *"
-
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: "*/5 * * * *"
+  push: # Uncomment temporarily to test
+    branches: [main]
 permissions:
-    contents: write
+  contents: write
 
 jobs:
-    update-snode-cache:
-        runs-on: ubuntu-latest
+  update-snode-cache:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v4
-              with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version-file: ".nvmrc"
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
 
-            - name: Install Yarn globally
-              run: npm install -g yarn
+      - name: Install Yarn globally
+        run: npm install -g yarn
 
-            - name: Initialize package.json if needed
-              run: |
-                  if [ ! -f package.json ]; then
-                    yarn init --yes
-                  fi
+      - name: Initialize package.json if needed
+        run: |
+          if [ ! -f package.json ]; then
+            yarn init --yes
+          fi
 
-            - name: Install dependencies
-              run: |
-                  yarn add -D zod node-fetch
+      - name: Install dependencies
+        run: |
+          yarn add -D zod node-fetch
 
-            - name: Run script
-              run: npx -y tsx populate_cache.ts
+      - name: Run script
+        run: npx -y tsx populate_cache.ts
 
-            - name: remove package.json
-              run: rm -f package.json yarn.lock
+      - name: remove package.json
+        run: rm -f package.json yarn.lock
 
-            - name: Commit and push changes
-              run: |
-                  git config user.name "github-actions[bot]"
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add -A
-                  git diff-index --quiet HEAD || git commit -m "chore: update snode cache"
-                  git push origin main
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "chore: update snode cache"
+          git push origin main
