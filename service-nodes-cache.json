@@ -1135,13 +1135,6 @@
       "requested_unlock_height": 0
     },
     {
-      "public_ip": "185.150.189.112",
-      "storage_port": 22115,
-      "pubkey_ed25519": "18e3e63ebb76a0c05b07eabb09f491283672267a6b426bfaba80ddc79897859c",
-      "pubkey_x25519": "3b4a353555630381b11e2d319225c12b60bb48686e98f6c689b579e1b65d3101",
-      "requested_unlock_height": 2042999
-    },
-    {
       "public_ip": "159.195.84.13",
       "storage_port": 22021,
       "pubkey_ed25519": "18e50a127bc94a3b3bd89c61258cb5469473d6e9b327e95ce09781198e720f91",
@@ -11215,5 +11208,5 @@
       "requested_unlock_height": 0
     }
   ],
-  "height": 2042974
+  "height": 2043024
 }
