@@ -51,3 +51,19 @@ jobs:
           git add -A
           git diff-index --quiet HEAD || git commit -m "chore: update snode cache"
           git push origin main
+
+      - name: Notify Telegram (success)
+        if: success()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="✅ snode cache updated successfully" \
+            -d parse_mode="HTML"
+
+      - name: Notify Telegram (failure)
+        if: failure()
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="❌ snode cache update failed — <a href=\"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}\">view run</a>" \
+            -d parse_mode="HTML"

@@ -1,0 +1,48 @@
+name: Snode cache staleness check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * *" # runs daily at noon UTC
+
+jobs:
+  check-staleness:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check last successful run
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          last_success=$(gh run list \
+            --repo "${{ github.repository }}" \
+            --workflow "Update snode cache" \
+            --status completed \
+            --json conclusion,updatedAt \
+            --jq '[.[] | select(.conclusion == "success")][0].updatedAt')
+
+          if [ -z "$last_success" ] || [ "$last_success" = "null" ]; then
+            echo "No successful run found"
+            echo "STALE=true" >> "$GITHUB_ENV"
+            exit 0
+          fi
+
+          last_epoch=$(date -d "$last_success" +%s)
+          now_epoch=$(date +%s)
+          diff_hours=$(( (now_epoch - last_epoch) / 3600 ))
+
+          echo "Last successful run: $last_success ($diff_hours hours ago)"
+
+          if [ "$diff_hours" -ge 48 ]; then
+            echo "STALE=true" >> "$GITHUB_ENV"
+          else
+            echo "STALE=false" >> "$GITHUB_ENV"
+          fi
+
+      - name: Notify Telegram (stale)
+        if: env.STALE == 'true'
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="⚠️ snode cache hasn't been updated in over 2 days — <a href=\"https://github.com/${{ github.repository }}/actions\">check workflows</a>" \
+            -d parse_mode="HTML"
