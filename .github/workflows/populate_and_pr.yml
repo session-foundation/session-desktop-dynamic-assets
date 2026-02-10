@@ -3,9 +3,10 @@ name: Update snode cache
 on:
   workflow_dispatch: # Manual trigger
   schedule:
-    - cron: "0 * * * *"
-  push: # Uncomment temporarily to test
+    - cron: "0 * * * *" # runs every hour
+  push:
     branches: [main]
+
 permissions:
   contents: write
 
