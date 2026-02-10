@@ -3,7 +3,7 @@ name: Snode cache staleness check
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * *" # runs daily at noon UTC
+    - cron: "0 10 * * *" # runs daily at 10am UTC
 
 jobs:
   check-staleness:
