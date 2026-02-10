@@ -6119,7 +6119,7 @@
       "requested_unlock_height": 0
     },
     {
-      "public_ip": "57.128.252.8",
+      "public_ip": "51.38.130.45",
       "storage_port": 22021,
       "pubkey_ed25519": "7c963015e206c34c44acbc0c4f0f907f8bf7afa91d61044bace0fee30538fc90",
       "pubkey_x25519": "005a3172d10334d288a1138cfc5dd919ef3209168ce0bc5c26361adc1430d162",
@@ -9186,6 +9186,13 @@
     },
     {
       "public_ip": "185.150.191.191",
+      "storage_port": 22103,
+      "pubkey_ed25519": "cafe03aae890902c2db5a2f4b3afad8add7153fec38050bfd01dffcc6b1a09c2",
+      "pubkey_x25519": "8e2d205bb46f53005aca2b7854a0bc506dae85a0a046b9234ab311ce74e3c65e",
+      "requested_unlock_height": 0
+    },
+    {
+      "public_ip": "185.150.191.191",
       "storage_port": 22104,
       "pubkey_ed25519": "cafe04f2db57043f8b9d26a9aa305e5707fd7b196b74b3f11daa35cc2a8928fc",
       "pubkey_x25519": "0a20d9b1719d80d56b86e27ace872def740deb9dd9daec67c3d214e599983420",
@@ -11208,5 +11215,5 @@
       "requested_unlock_height": 0
     }
   ],
-  "height": 2042896
+  "height": 2042929
 }
