@@ -6112,7 +6112,7 @@
       "requested_unlock_height": 0
     },
     {
-      "public_ip": "51.38.130.45",
+      "public_ip": "57.128.252.8",
       "storage_port": 22021,
       "pubkey_ed25519": "7c963015e206c34c44acbc0c4f0f907f8bf7afa91d61044bace0fee30538fc90",
       "pubkey_x25519": "005a3172d10334d288a1138cfc5dd919ef3209168ce0bc5c26361adc1430d162",
@@ -11208,5 +11208,5 @@
       "requested_unlock_height": 0
     }
   ],
-  "height": 2043047
+  "height": 2043189
 }
