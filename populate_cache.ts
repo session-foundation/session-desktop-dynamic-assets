@@ -35,9 +35,7 @@ const ServiceNodeFromSeedSchema = z.object({
 
 const ServiceNodesFromSeedSchema = z
   .array(ServiceNodeFromSeedSchema)
-  .transform((nodes) =>
-    nodes.filter((node) => node.public_ip && node.public_ip !== '0.0.0.0'),
-  );
+  .transform(nodes => nodes.filter(node => node.public_ip && node.public_ip !== '0.0.0.0'));
 
 const ServiceNodesWithHeightSchema = z.object({
   service_node_states: ServiceNodesFromSeedSchema,
@@ -49,7 +47,7 @@ const ServiceNodesResponseSchema = z.object({
 });
 
 async function fetchServiceNodes() {
-  const abortDetails = SEED_URLS.map((seedUrl) => {
+  const abortDetails = SEED_URLS.map(seedUrl => {
     const controller = new AbortController();
 
     return {
@@ -106,10 +104,10 @@ async function fetchServiceNodes() {
       console.warn('safeParsed.error:', safeParsed.error);
 
       throw new Error(' Could not parse response');
-    }),
+    })
   );
 
-  abortDetails.forEach((details) => {
+  abortDetails.forEach(details => {
     clearTimeout(details.timeout);
     details.controller.abort();
   });
@@ -126,9 +124,7 @@ async function main() {
     const parsed = await fetchServiceNodes();
 
     // Sort nodes by pubkey_ed25519 so the diff is minimal between updates
-    parsed.service_node_states.sort((a, b) =>
-      a.pubkey_ed25519.localeCompare(b.pubkey_ed25519),
-    );
+    parsed.service_node_states.sort((a, b) => a.pubkey_ed25519.localeCompare(b.pubkey_ed25519));
 
     // remove the file so we are sure the date of creation will be correct (needed for session-desktop to know how old the snode pool is)
     await fs.rm(CACHE_FILE, { force: true });
@@ -137,20 +133,18 @@ async function main() {
 
     // Save to cache
     await fs.writeFile(CACHE_FILE, json);
-    console.log(
-      `Cached ${parsed.service_node_states.length} nodes to ${CACHE_FILE}`,
-    );
+    console.log(`Cached ${parsed.service_node_states.length} nodes to ${CACHE_FILE}`);
 
     // Validate node count
     if (parsed.service_node_states.length < MIN_NODE_COUNT) {
       console.error(
-        `❌ Only ${parsed.service_node_states.length} nodes found (minimum: ${MIN_NODE_COUNT})`,
+        `❌ Only ${parsed.service_node_states.length} nodes found (minimum: ${MIN_NODE_COUNT})`
       );
       process.exit(1);
     }
 
     console.log(
-      `✅ Found ${parsed.service_node_states.length} service nodes (minimum: ${MIN_NODE_COUNT})`,
+      `✅ Found ${parsed.service_node_states.length} service nodes (minimum: ${MIN_NODE_COUNT})`
     );
     console.log('\nSample node:');
     console.log(JSON.stringify(parsed.service_node_states[0], null, 2));
@@ -158,10 +152,7 @@ async function main() {
     if (error instanceof z.ZodError) {
       console.error('❌ Validation error:', error);
     } else {
-      console.error(
-        '❌ Error:',
-        error instanceof Error ? error.message : error,
-      );
+      console.error('❌ Error:', error instanceof Error ? error.message : error);
     }
     process.exit(1);
   }
