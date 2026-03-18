@@ -44,6 +44,12 @@ jobs:
       - name: remove package.json
         run: rm -f package.json yarn.lock
 
+      - name: Compute exit stats
+        id: exit_stats
+        run: |
+          CURRENT_EXIT=$(jq '[.service_node_states[] | select(.requested_unlock_height > 0)] | length' service-nodes-cache.json)
+          echo "current_exit=$CURRENT_EXIT" >> "$GITHUB_OUTPUT"
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
@@ -57,7 +63,7 @@ jobs:
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="✅ snode cache updated successfully" \
+            -d text="✅ snode cache updated — <b>${{ steps.exit_stats.outputs.current_exit }}</b> nodes requesting exit" \
             -d parse_mode="HTML"
 
       - name: Notify Telegram (failure)
