@@ -1135,6 +1135,20 @@
       "swarm": "26ffffffffffffff"
     },
     {
+      "public_ip": "5.182.17.196",
+      "storage_port": 22021,
+      "pubkey_ed25519": "0c36ec1c1fa99fc764fdd6691177795fa0db07de2de468786bef43968be9f336",
+      "pubkey_x25519": "c2b7e378444bcf125d93f43cda5feb232b84dc5561196de82dfc59e1f3f92260",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        2
+      ],
+      "swarm": "97ffffffffffffff"
+    },
+    {
       "public_ip": "45.79.66.109",
       "storage_port": 22021,
       "pubkey_ed25519": "0c6fff265cda975399ca2bdbca92454b8fde4beb265ef00fd6851e16903e58d3",
@@ -1625,7 +1639,7 @@
       "swarm": "affffffffffffff"
     },
     {
-      "public_ip": "51.91.96.230",
+      "public_ip": "51.79.85.184",
       "storage_port": 22021,
       "pubkey_ed25519": "11525f4493e01f1ccc840a3afe9cfb3240d25737473e0c4b412c52d1262439e2",
       "pubkey_x25519": "d879b768ab46c9b0f4c0b02808cd6f3576f4d0fd0ffdb6ddddac413defa5ac45",
@@ -1634,7 +1648,7 @@
       "storage_server_version": [
         2,
         11,
-        0
+        2
       ],
       "swarm": "8dffffffffffffff"
     },
@@ -5839,20 +5853,6 @@
       "swarm": "5bffffffffffffff"
     },
     {
-      "public_ip": "95.217.218.66",
-      "storage_port": 22104,
-      "pubkey_ed25519": "2b3afbb02ac99ef0bec69aa23c3086263b80a255e81853b257d9355376a2ab67",
-      "pubkey_x25519": "226dfab4897a5fc8802d3c6e27e55938d3a320c1126c7f1c4e82ba9771cedd29",
-      "requested_unlock_height": 2076801,
-      "storage_lmq_port": 22404,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "54ffffffffffffff"
-    },
-    {
       "public_ip": "185.150.190.48",
       "storage_port": 22111,
       "pubkey_ed25519": "2b506782341cdbd3ca9d2d0af633865e5e9d482f2e5404e3a86e6aeb6c5b0c32",
@@ -9698,7 +9698,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        3
       ],
       "swarm": "e4ffffffffffffff"
     },
@@ -17650,7 +17650,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        3
       ],
       "swarm": "d0ffffffffffffff"
     },
@@ -19050,7 +19050,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        3
       ],
       "swarm": "327fffffffffffff"
     },
@@ -19568,7 +19568,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        3
       ],
       "swarm": "baffffffffffffff"
     },
@@ -22513,5 +22513,5 @@
       "swarm": "a7fffffffffffff"
     }
   ],
-  "height": 2076304
+  "height": 2077024
 }
