@@ -362,7 +362,7 @@
         11,
         0
       ],
-      "swarm": "fffffffffffffff"
+      "swarm": "a9ffffffffffffff"
     },
     {
       "public_ip": "167.114.156.20",
@@ -5367,7 +5367,7 @@
       "storage_port": 22021,
       "pubkey_ed25519": "33ed853081a82591f599d7a0628bde6d46a12db14dba246ccb585eb5a5c2dc28",
       "pubkey_x25519": "0f2d9729e9cec2c94308e1f9953c22a252376ebd8b6e576de9f80bfd36cefa49",
-      "requested_unlock_height": 0,
+      "requested_unlock_height": 2105722,
       "storage_lmq_port": 22020,
       "storage_server_version": [
         2,
@@ -6718,7 +6718,7 @@
         11,
         2
       ],
-      "swarm": "60ffffffffffffff"
+      "swarm": "57fffffffffffff"
     },
     {
       "public_ip": "51.89.165.64",
@@ -11089,20 +11089,6 @@
       "swarm": "72ffffffffffffff"
     },
     {
-      "public_ip": "65.21.240.249",
-      "storage_port": 22101,
-      "pubkey_ed25519": "90a74727ec61674fc013228927276187fb9fc42c8e7bc4012192dfd7bf00dee7",
-      "pubkey_x25519": "5a4ccbeaae8ba04273c67d1a3be82ce275356d7f21853f0b5e6f283ca286ed41",
-      "requested_unlock_height": 2094670,
-      "storage_lmq_port": 22401,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "a9ffffffffffffff"
-    },
-    {
       "public_ip": "198.98.55.4",
       "storage_port": 22021,
       "pubkey_ed25519": "90bf51a1d948e2fb84a36347f97ebb975a3b9c6f669e7e60800f034a1653bee3",
@@ -12151,20 +12137,6 @@
         0
       ],
       "swarm": "b5ffffffffffffff"
-    },
-    {
-      "public_ip": "104.234.124.143",
-      "storage_port": 22021,
-      "pubkey_ed25519": "a1ba2f493993eeb93ceec6676fa6c530f24ca468c6c2ee8387a4667a5ceea511",
-      "pubkey_x25519": "05579b15cb9582bee032be9d2a5c419c1d3b173603772dab994d18056c117503",
-      "requested_unlock_height": 2094541,
-      "storage_lmq_port": 22020,
-      "storage_server_version": [
-        2,
-        11,
-        2
-      ],
-      "swarm": "57fffffffffffff"
     },
     {
       "public_ip": "104.244.77.81",
@@ -18607,5 +18579,5 @@
       "swarm": "a7fffffffffffff"
     }
   ],
-  "height": 2094314
+  "height": 2095035
 }
