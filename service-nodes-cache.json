@@ -1023,7 +1023,7 @@
       "swarm": "357fffffffffffff"
     },
     {
-      "public_ip": "51.79.85.184",
+      "public_ip": "51.91.96.230",
       "storage_port": 22021,
       "pubkey_ed25519": "11525f4493e01f1ccc840a3afe9cfb3240d25737473e0c4b412c52d1262439e2",
       "pubkey_x25519": "d879b768ab46c9b0f4c0b02808cd6f3576f4d0fd0ffdb6ddddac413defa5ac45",
@@ -1032,7 +1032,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        0
       ],
       "swarm": "edffffffffffffff"
     },
@@ -9280,7 +9280,7 @@
         11,
         3
       ],
-      "swarm": "48ffffffffffffff"
+      "swarm": "87ffffffffffffff"
     },
     {
       "public_ip": "91.231.182.121",
@@ -13511,6 +13511,20 @@
       "swarm": "14ffffffffffffff"
     },
     {
+      "public_ip": "13.140.148.2",
+      "storage_port": 22021,
+      "pubkey_ed25519": "e6df3b0e1f1278b92e6870ff51b2d9b63c6dd62f4cb10d00da6364aef9b9b77a",
+      "pubkey_x25519": "6282507d28d0180aac156e76567e8ade1545b4c4b2c9e9d68e57acff70fe6d39",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "74ffffffffffffff"
+    },
+    {
       "public_ip": "209.141.52.233",
       "storage_port": 22021,
       "pubkey_ed25519": "e7081453f1345e79b39a58d154ccec30c55484c25a3dd4222e890f995dcbcbaa",
@@ -13985,20 +13999,6 @@
         3
       ],
       "swarm": "65ffffffffffffff"
-    },
-    {
-      "public_ip": "109.123.240.83",
-      "storage_port": 22021,
-      "pubkey_ed25519": "ef51d4a475670a4e71e125fa4d7315c51925356395eca529f3193119d6c7d4cd",
-      "pubkey_x25519": "a231db47a762dc958f7f48d23f0af109d0a610185b442d8eaa18c008e826063e",
-      "requested_unlock_height": 0,
-      "storage_lmq_port": 22020,
-      "storage_server_version": [
-        2,
-        11,
-        3
-      ],
-      "swarm": "87ffffffffffffff"
     },
     {
       "public_ip": "193.160.96.238",
@@ -14883,5 +14883,5 @@
       "swarm": "a7fffffffffffff"
     }
   ],
-  "height": 2128188
+  "height": 2128891
 }
