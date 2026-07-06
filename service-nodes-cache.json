@@ -1023,7 +1023,7 @@
       "swarm": "357fffffffffffff"
     },
     {
-      "public_ip": "51.91.96.230",
+      "public_ip": "51.79.85.184",
       "storage_port": 22021,
       "pubkey_ed25519": "11525f4493e01f1ccc840a3afe9cfb3240d25737473e0c4b412c52d1262439e2",
       "pubkey_x25519": "d879b768ab46c9b0f4c0b02808cd6f3576f4d0fd0ffdb6ddddac413defa5ac45",
@@ -1032,7 +1032,7 @@
       "storage_server_version": [
         2,
         11,
-        0
+        2
       ],
       "swarm": "faffffffffffffff"
     },
@@ -14589,5 +14589,5 @@
       "swarm": "a7fffffffffffff"
     }
   ],
-  "height": 2147600
+  "height": 2148345
 }
