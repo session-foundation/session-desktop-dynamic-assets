@@ -4215,6 +4215,20 @@
       "swarm": "b3ffffffffffffff"
     },
     {
+      "public_ip": "150.230.119.99",
+      "storage_port": 22101,
+      "pubkey_ed25519": "2e2da65655209f9760dd0f83d02fd086001f883b6c0c91b47392201c5aaf64d1",
+      "pubkey_x25519": "4b572ae22c9efca09adfd50e9e4ca20d48d24c3f664945b739d9a4efa6c1235c",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 20201,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "baffffffffffffff"
+    },
+    {
       "public_ip": "157.254.221.25",
       "storage_port": 22021,
       "pubkey_ed25519": "2ed012dc966fed576b8b59c2c96c7e257bb1dea5fd9ae707167721fee3189957",
@@ -4689,6 +4703,20 @@
         2
       ],
       "swarm": "40ffffffffffffff"
+    },
+    {
+      "public_ip": "65.21.240.249",
+      "storage_port": 22107,
+      "pubkey_ed25519": "37cba182243cd8aecffbfe5db7d61a8625d5eebbee068746b03bc5452e7876a0",
+      "pubkey_x25519": "040c07df12782f8a5090e183ab5f6dfb2f48a7f7eac6c2a091805fa339afcc2a",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22407,
+      "storage_server_version": [
+        2,
+        11,
+        0
+      ],
+      "swarm": "fcffffffffffffff"
     },
     {
       "public_ip": "88.198.244.201",
@@ -5333,20 +5361,6 @@
         2
       ],
       "swarm": "fdffffffffffffff"
-    },
-    {
-      "public_ip": "95.216.223.93",
-      "storage_port": 22101,
-      "pubkey_ed25519": "45e6a33516862327ed2f0f60ea2fb9e4e7c313786cbeb07ad6c206a2ac59b3c1",
-      "pubkey_x25519": "c9516d660000b18566d28851d6bc6768eb14ded83e83c91b484490ab6add5d5e",
-      "requested_unlock_height": 2155407,
-      "storage_lmq_port": 22401,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "8dffffffffffffff"
     },
     {
       "public_ip": "45.145.42.195",
@@ -6413,20 +6427,6 @@
       "swarm": "307fffffffffffff"
     },
     {
-      "public_ip": "116.203.146.221",
-      "storage_port": 22108,
-      "pubkey_ed25519": "59cb676c77fc8b923026547301aacb7e5c9684186f0cd631e7da7fb5a7501084",
-      "pubkey_x25519": "76ef14cceccada0f5a2aea1057fe71637984509b3ad7dec4fb602e41ee76ed1a",
-      "requested_unlock_height": 2155407,
-      "storage_lmq_port": 22408,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "5affffffffffffff"
-    },
-    {
       "public_ip": "94.23.19.49",
       "storage_port": 20608,
       "pubkey_ed25519": "59f3d7e6f9525a6970e712b72368f51dfe341c6dbd39810b95b64802260d3df0",
@@ -7419,6 +7419,20 @@
         3
       ],
       "swarm": "7fffffffffffffff"
+    },
+    {
+      "public_ip": "51.222.30.236",
+      "storage_port": 22021,
+      "pubkey_ed25519": "72b6e9fb6cc4297ad50cb5742021aec3b70326433c63bb9dba74d380e109db10",
+      "pubkey_x25519": "8a7e1f987c339cac6d9119d35ea26ee4e3010ebbc795bd1d57a4f20907e9f31a",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "7effffffffffffff"
     },
     {
       "public_ip": "145.239.90.154",
@@ -8611,6 +8625,20 @@
       "swarm": "72ffffffffffffff"
     },
     {
+      "public_ip": "65.21.240.249",
+      "storage_port": 22101,
+      "pubkey_ed25519": "90a74727ec61674fc013228927276187fb9fc42c8e7bc4012192dfd7bf00dee7",
+      "pubkey_x25519": "5a4ccbeaae8ba04273c67d1a3be82ce275356d7f21853f0b5e6f283ca286ed41",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22401,
+      "storage_server_version": [
+        2,
+        11,
+        0
+      ],
+      "swarm": "87ffffffffffffff"
+    },
+    {
       "public_ip": "198.98.55.4",
       "storage_port": 22021,
       "pubkey_ed25519": "90bf51a1d948e2fb84a36347f97ebb975a3b9c6f669e7e60800f034a1653bee3",
@@ -9603,20 +9631,6 @@
         3
       ],
       "swarm": "c5ffffffffffffff"
-    },
-    {
-      "public_ip": "116.203.146.221",
-      "storage_port": 22103,
-      "pubkey_ed25519": "a5566441e6e275cc9ef4c85e34c4005119129eef295cec784772ab37ce37c6a9",
-      "pubkey_x25519": "9b237b8352e40147323d39f324506da027c141c26c62299f83ff52035316d836",
-      "requested_unlock_height": 2155407,
-      "storage_lmq_port": 22403,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "257fffffffffffff"
     },
     {
       "public_ip": "176.96.138.191",
@@ -10694,7 +10708,7 @@
         11,
         3
       ],
-      "swarm": "e6ffffffffffffff"
+      "swarm": "e7fffffffffffff"
     },
     {
       "public_ip": "51.81.87.72",
@@ -10975,6 +10989,20 @@
         2
       ],
       "swarm": "efffffffffffffff"
+    },
+    {
+      "public_ip": "51.222.26.201",
+      "storage_port": 22021,
+      "pubkey_ed25519": "be2049e870ed5d864a67ba34385914cbf738fe9e531b30fe1a987d14856d71d9",
+      "pubkey_x25519": "82e3cc06ab2ebbad1562ffa7a637ae6012425971faf118368f8e18bd0f776a21",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "a6ffffffffffffff"
     },
     {
       "public_ip": "65.108.251.24",
@@ -11336,7 +11364,7 @@
       "storage_server_version": [
         2,
         11,
-        2
+        3
       ],
       "swarm": "34ffffffffffffff"
     },
@@ -11618,7 +11646,7 @@
         11,
         3
       ],
-      "swarm": "9ffffffffffffff"
+      "swarm": "8dffffffffffffff"
     },
     {
       "public_ip": "172.93.167.59",
@@ -13749,6 +13777,20 @@
       "swarm": "3bffffffffffffff"
     },
     {
+      "public_ip": "65.21.240.249",
+      "storage_port": 22106,
+      "pubkey_ed25519": "f330c6b6d6789535a02befe42b08a6f490e4a7162c05f6007100ac024f837d35",
+      "pubkey_x25519": "ad06688183bfc9a74164d52b9ada771b6653e516e7eb73cd69c709935d2ceb28",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22406,
+      "storage_server_version": [
+        2,
+        11,
+        0
+      ],
+      "swarm": "efffffffffffffff"
+    },
+    {
       "public_ip": "37.221.93.45",
       "storage_port": 22021,
       "pubkey_ed25519": "f373004c083f3e9cc99226e17f50e32719bcf8aa9cd96c6357c7a9148735d77f",
@@ -14365,5 +14407,5 @@
       "swarm": "3bffffffffffffff"
     }
   ],
-  "height": 2154796
+  "height": 2155518
 }
