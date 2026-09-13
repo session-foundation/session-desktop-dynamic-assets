@@ -4831,20 +4831,6 @@
       "swarm": "7effffffffffffff"
     },
     {
-      "public_ip": "92.112.124.92",
-      "storage_port": 22021,
-      "pubkey_ed25519": "39215f013335fe3d538589c330957cc283009e50f895e30446ca08ed9b269931",
-      "pubkey_x25519": "41dcf4b14768f7d96cb6b49bee410a6cd504330f3b2a8fcff74662d05cadea58",
-      "requested_unlock_height": 2197915,
-      "storage_lmq_port": 22020,
-      "storage_server_version": [
-        2,
-        11,
-        3
-      ],
-      "swarm": "65ffffffffffffff"
-    },
-    {
       "public_ip": "167.86.69.151",
       "storage_port": 22021,
       "pubkey_ed25519": "3929fbed3469b68e0ea4f5ec3dd0412f9de3c55c8a03b44f0d994560005a19d6",
@@ -8877,20 +8863,6 @@
       "swarm": "71ffffffffffffff"
     },
     {
-      "public_ip": "46.225.102.55",
-      "storage_port": 22103,
-      "pubkey_ed25519": "8f25e06e5af6bc5ba351a0ddc4e2efc7f5ab421ca5514d9baca3a7f28d9107a3",
-      "pubkey_x25519": "2bbff4f5df75b6bd9eb797fdd05abd7ae20c9bcbcf3162880a86f65728a59036",
-      "requested_unlock_height": 0,
-      "storage_lmq_port": 22403,
-      "storage_server_version": [
-        2,
-        11,
-        0
-      ],
-      "swarm": "187fffffffffffff"
-    },
-    {
       "public_ip": "15.204.236.128",
       "storage_port": 22021,
       "pubkey_ed25519": "8fc3edc358d03320c45bbadef61a867d599beb58e42ad7cd2a5742aed91de229",
@@ -11017,6 +10989,20 @@
         2
       ],
       "swarm": "477fffffffffffff"
+    },
+    {
+      "public_ip": "2.29.36.164",
+      "storage_port": 22021,
+      "pubkey_ed25519": "b30142feb4b5ee3e63076014ba85e12c2c5668d9f0f264a6961f90a60f2cabfd",
+      "pubkey_x25519": "4d45bb16a7d0af8dbec5ab2c3a078934b0b6eb665550434a8c866b83e655456a",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "c4ffffffffffffff"
     },
     {
       "public_ip": "194.163.179.98",
@@ -15219,5 +15205,5 @@
       "swarm": "faffffffffffffff"
     }
   ],
-  "height": 2197263
+  "height": 2197986
 }
