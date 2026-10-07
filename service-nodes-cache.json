@@ -6438,7 +6438,7 @@
         11,
         3
       ],
-      "swarm": "69ffffffffffffff"
+      "swarm": "fdffffffffffffff"
     },
     {
       "public_ip": "216.22.27.30",
@@ -9073,20 +9073,6 @@
       "swarm": "cdffffffffffffff"
     },
     {
-      "public_ip": "80.69.172.177",
-      "storage_port": 22021,
-      "pubkey_ed25519": "8b3bdfd98bad786dcb5974fa4dceee27b770258dce3274367b2fd0a89f636c35",
-      "pubkey_x25519": "df8bd059cd8a77da412e1a5ff76a0b49200445720b943d8c3f0f2333690f5c1e",
-      "requested_unlock_height": 0,
-      "storage_lmq_port": 22020,
-      "storage_server_version": [
-        2,
-        11,
-        3
-      ],
-      "swarm": "9effffffffffffff"
-    },
-    {
       "public_ip": "128.140.124.48",
       "storage_port": 22104,
       "pubkey_ed25519": "8c34fbd9d47876f9d9d57ebba8329e8d9a66ee482019f3ea19fce5ed920832b0",
@@ -10037,6 +10023,20 @@
         3
       ],
       "swarm": "feffffffffffffff"
+    },
+    {
+      "public_ip": "107.173.166.139",
+      "storage_port": 22021,
+      "pubkey_ed25519": "9c8593fbd6eab37cacd56c74532e71f1c265b48059fa11d6c927953d2a94f692",
+      "pubkey_x25519": "5a366f953fcccf34c4e2ba8b3c727af668ddfd5362ca6651c9adb8bc6332f31c",
+      "requested_unlock_height": 0,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "5affffffffffffff"
     },
     {
       "public_ip": "217.182.206.34",
@@ -13903,6 +13903,20 @@
       "swarm": "e8ffffffffffffff"
     },
     {
+      "public_ip": "94.237.37.65",
+      "storage_port": 22021,
+      "pubkey_ed25519": "d273bd93e04d8fbcbf1cb5adee0cab008ed241828ca726fd44cefc2db6aae5de",
+      "pubkey_x25519": "bb60d6aafd2992131eb2c87b48b25ed1e307255c15b87c3967569739761ce302",
+      "requested_unlock_height": 2224551,
+      "storage_lmq_port": 22020,
+      "storage_server_version": [
+        2,
+        11,
+        3
+      ],
+      "swarm": "12ffffffffffffff"
+    },
+    {
       "public_ip": "185.153.55.236",
       "storage_port": 22021,
       "pubkey_ed25519": "d2c3f58a65d611228b49343bddfc03800020b4a244438fdec627b17b0b892701",
@@ -16367,5 +16381,5 @@
       "swarm": "faffffffffffffff"
     }
   ],
-  "height": 2214929
+  "height": 2215650
 }
